@@ -1,0 +1,15 @@
+package com.j1.w9;
+
+public class Singleton{
+  Singleton uniqueinstance;
+  private static int numCalled=0;
+  private Singleton(){}
+  public static Singleton getinstance(){
+    if(uniqueInstance==null){
+      uniqueInstance=new Singleton();
+    }
+    numCalled++;
+    System.out.println("numCalled: ",numCalled);
+    return uniqueInstance;
+  }
+}
