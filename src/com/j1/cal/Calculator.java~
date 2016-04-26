@@ -1,0 +1,58 @@
+package com.j1.cal;
+import java.util.Scanner;
+
+class Calc{
+  int plus(int a,int b){
+    int res= a+b;
+    System.out.println(res);
+  }
+  int minus(int a,int b){
+    int res= a-b;
+    System.out.println(res);
+  }
+  int multi(int a,int b){
+    int res=a*b;
+    System.out.println(res);
+  }
+  int div(int a,int b){
+    int res=a/b;
+    System.out.println(res);
+  }
+}
+
+public class Calculator{
+  public static void main(String [] args){
+    Scanner n= new Scanner(System.in);
+    System.out.println("operand1,operand2");
+    int operand1=a.nextInt();
+    int operand2=a.nextInt();
+    char operation=a.nextchar();
+    if(operand1>99999999 && operand2>99999999){
+      System.out.println("Error")
+    }
+    System.out.println("choose operation");
+    char operation= a.next().charAt(0);
+    if(operation=="+"){
+      res.add(int a, int b);
+      break;
+    }
+    else if(operation=="-"){
+      res.minus(int a, int b);
+      break;
+    }
+    else if(operation=="*"){
+      res.multi(int a, int b);
+      break;
+    }
+    else if(operation=="/"){
+      res.div(int a,int b);
+      break;
+    }
+    else{
+      System.out.println("Error")
+      break;
+    }
+    
+      
+  }
+}
