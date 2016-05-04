@@ -1,0 +1,14 @@
+package com.j1.w10;
+
+public class SimpleRemoteControl implements Command{
+  Command slot;
+  
+  public SimpleRemoteControl(){}
+  
+  public void setCommand(Command command){
+    slot = command;
+  }
+  public void buttonPress(){
+    slot.execute();
+  }
+}

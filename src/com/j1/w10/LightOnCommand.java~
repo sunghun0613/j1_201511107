@@ -1,0 +1,9 @@
+package com.j1.w10;
+
+public class LightOnCommand implements Command{
+  Light light;
+  public void execute(){
+    light.on();
+    light.off();
+  }
+}

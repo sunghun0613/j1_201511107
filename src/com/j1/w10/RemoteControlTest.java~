@@ -1,0 +1,14 @@
+package com.j1.w10;
+
+public class RemoteControlTest{
+  public static void main(String[]args){
+    SimpleRemoteControl remote= new SimpleRemoteControl();
+    Light light= new Light();
+    LightOnCommand lightOn=new LightCommand(light);
+    SimpleRemoteControl setCommand= new SimpleRemoteControl(lighton);
+    SimpleRemoteControl buttonPressed = new SimpleRemoteControl();
+    
+    remote.setCommand(lighton);
+    remote.buttonPressed();
+  }
+}
