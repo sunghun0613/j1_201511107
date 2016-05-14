@@ -1,0 +1,7 @@
+public class LightOnCommand implements Command{
+  LIght light;
+  int level;
+  public void undo(){
+    light.dim(level);
+  }
+}
