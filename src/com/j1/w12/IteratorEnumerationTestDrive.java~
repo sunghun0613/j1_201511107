@@ -1,0 +1,9 @@
+package com.j1.w12;
+
+import java.util.*;
+
+public class IteratorEnumerationTestDrive{
+  public static void main(String args[]){
+    ArrayList I = new ArrayList(S)
+  }
+}
