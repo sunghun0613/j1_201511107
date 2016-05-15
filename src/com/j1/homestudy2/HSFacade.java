@@ -1,0 +1,34 @@
+package com.j1.homestudy2;
+
+public class HSFacade{
+  private StandLight stand;
+  private Book book;
+  private Pen pen;
+  private Notebook notebook;
+  public HSFacade(StandLight stand,Book book,Pen pen,Notebook notebook){
+    this.stand=stand;
+    this.book=book;
+    this.pen=pen;
+    this.notebook=notebook;
+  }
+  public void startstudy(String study){
+    System.out.println("start studymode");
+    stand.on();
+    book.open();
+    pen.pick();
+    pen.open();
+    notebook.on();
+    notebook.login();
+    notebook.open();
+  }
+  public void finish(){
+    System.out.println("finish studymode");
+    notebook.close();
+    notebook.logout();
+    notebook.off();
+    pen.close();
+    pen.put();
+    book.close();
+    stand.off();
+  }
+}
