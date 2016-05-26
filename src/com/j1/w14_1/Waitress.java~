@@ -1,0 +1,18 @@
+package com.j1.w14_1;
+
+public class Waitress{
+  PancakeHouseMenu phm;
+  DinerMenu dm;
+  public Waitress(PancakeHouseMenu p, DinerMenu dinerMenu d){
+    this.phm=p;
+    this.dm=d;
+  }
+  public void printMenu(){
+    Iterator pi=phm.createIterator();
+    iterator dm=dm.createIterator();
+    while(pi.hasNext()){
+      MenuItem.menuItem=(MenuItem)pi.next();
+      System.out.println(menuItem.getName());
+    }
+  }
+}
